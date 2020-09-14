@@ -1,0 +1,43 @@
+/* tags */
+body {
+    font-family: Verdana;
+}
+/* menu */
+nav, ul {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block;
+    padding: 10px;
+    float: left;
+    background-color: crimson;
+    color: #F0DFDF;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #92102A;
+}
+/*footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: crimson;
+}
+
+
+/* classes */
+.footercolumn {
+    float: left;
+    width: 33.333%; /* 3 samen 99% */
+    color: #F0DFDF;
+    text-align: center;
+    height: 100px;
+
+}
