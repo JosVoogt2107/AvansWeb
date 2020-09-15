@@ -1,0 +1,47 @@
+/* tags */
+body {
+    font-family: Verdana;
+}
+
+
+/* menu */
+ul,nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    left: 0;
+    background: crimson;
+}
+li a {
+    display: block;
+    padding: 15px;
+    float: left;
+    background-color: crimson;
+    color: #F0DFDF;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #92102A;
+}
+/*footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: crimson;
+}
+
+
+/* classes */
+.footercolumn {
+    float: left;
+    width: 33.333%; /* 3 samen 99% */
+    color: #F0DFDF;
+    text-align: center;
+    height: 100px;
+
+}
