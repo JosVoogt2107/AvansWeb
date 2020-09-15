@@ -1,9 +1,11 @@
 /* tags */
 body {
-    font-family: Verdana;
+    font-family: 'Fugaz One';
+    font-weight: 300;
 }
-
-
+p {
+    font-family: verdana;
+}
 /* menu */
 ul,nav{
     position: fixed;
@@ -44,4 +46,32 @@ footer {
     text-align: center;
     height: 100px;
 
+}
+.fab {
+    font-size: 1.5rem;
+    padding: 0 5px 0 5px;
+}
+/*Indivuduel icons*/
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }
