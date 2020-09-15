@@ -1,13 +1,17 @@
-ICTIB week2 
-Interview vragen
+ICTIB week3 
+Interview vragen 
+Donderdag 17 September interview.
 
 
-Database week 2 
+Database week 4  
+(optioneel)
 
-Java practicum week 2
-Java huiswerk
+Java huiswerk week 2 --> week 3
+Java practicum week 3
+Java huiswerk week 3
 
 
-HTML week 2
+HTML week 3
 
-Samenwerken en Vergaderen week 2
+Samenwerken en Vergaderen
+Samenwerkingsafspraken maken voor dinsdag week 3
