@@ -13,21 +13,22 @@ ul,nav{
     top: 0;
     margin: 0;
     list-style-type: none;
-    padding: 0;
     left: 0;
     background: crimson;
+    display: flex;
 }
 li a {
-    display: block;
     padding: 15px;
     float: left;
     background-color: crimson;
-    color: #F0DFDF;
+    color: white;
     text-decoration: none;
 }
+
 a:hover {
     background-color: navy;
 }
+
 /*footer*/
 footer {
     position: fixed;
@@ -39,13 +40,21 @@ footer {
 
 
 /* classes */
+.active-page {
+    background-color: navy;
+}
+
 .footercolumn {
     float: left;
     width: 33.333%; /* 3 samen 99% */
-    color: #F0DFDF;
+    color: white;
     text-align: center;
     height: 100px;
 
+}
+/* bars for menu */
+i.fa.fa-bars {
+    display: none;
 }
 .fab {
     font-size: 1.5rem;
@@ -64,6 +73,24 @@ footer {
     background-clip: text;
     color: transparent;
 }
+/* Media queries voor Header en Footer */
+/* telefoon */
+@media screen and (max-width: 480px) {
+    i.fa.fa-bars {
+        float: right;
+        display: block;
+    }
+    li:not(:first-child) {
+        display: none;
+    }
+}
+/* tablet */
+@media screen and (max-width: 1024px) {
+
+}
+
+
+
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
