@@ -28,18 +28,22 @@ li a{
 nav li a:hover {
     background-color: navy;
 }
-
-/*footer*/
 footer {
+    background-color : crimson;
+    height: 180px;
     width: 100%;
-    position: absolute;
-    left: 0; 
-
+    display: flex;
+    justify-content: center;
 }
-
-.content {
-    padding-bottom: 2%;
-    font-style: Verdana;
+.footercolumn {
+    width: 33.3333%;
+    color: white;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+.footercolumn > p {
+    font-family: verdana;
 }
 
 /* classes */
@@ -59,15 +63,7 @@ footer {
 }
 
 /*footer kolommen */
-.footercolumn {
-    float: left;
-    background-color: crimson;
-    width: 33.333%; /* 3 samen 99% */
-    color: white;
-    text-align: center;
-    height: 100px;
 
-}
 /* Hamburger menu icoon */
 i.fa-bars {
     display: none;
@@ -75,7 +71,7 @@ i.fa-bars {
 }
 /* iconen juiste font-size en padding geven */
 .fab {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0 5px 0 5px;
 }
 /*Indivuduel icons*/
