@@ -1,20 +1,24 @@
-/* tags */
- html,body {
+/*------ standard tags--------------- */
+ html body {
     font-family: 'Fugaz One', Verdana, Tahoma, sans-serif;
     font-weight: 300;
     padding: 0;
     margin: 0;
 }
-/* menu */
+.content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*------------- Header + menu ---------------- */
 nav ul{
     position: fixed; /* positie van het menu blijft boven aan de pagina staan */
     width: 100%;
     top: 0;
+    left: 0;
     margin: 0;
     list-style-type: none;
-    left: 0;
-    background: crimson;
+    background-color: crimson;
     display: flex;
+    align-items: center;
 }
 /* menu items */
 li a{
@@ -24,31 +28,8 @@ li a{
     color: white;
     text-decoration: none;
 }
-/*hover over alle items in menu*/
-nav li a:hover {
-    background-color: navy;
-}
-footer {
-    background-color : crimson;
-    height: 180px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.footercolumn {
-    width: 33.3333%;
-    color: white;
-    height: 100px;
-    text-align: center;
-    float: left;
-}
-.footercolumn > p {
-    font-family: verdana;
-}
-
-/* classes */
-/*active pagina */
-.active-page {
+/*hover over alle items in menu en zet de kleur voor de active pagina*/
+nav li a:hover, .active-page {
     background-color: navy;
 }
 /*header image */
@@ -56,14 +37,40 @@ footer {
     height: 500px;
     background: url('../img/mario_level_header.png');
     background-size: 100%;
-}
+} 
+
 /*hamburger menu checkbox */
 .toggler {
     display: none;
 }
 
-/*footer kolommen */
 
+/*---------------- footer ------------------- */
+footer {
+    background-color : crimson;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*footer kolommen */
+.footercolumn {
+    width: 33.3333%;
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+.footercolumn > p {
+    font-family: verdana;
+}
+.footercolumn > h3 {
+    margin-top: -15px;
+}
+
+
+/*-----------------font-awesome Icons--------------------*/
 /* Hamburger menu icoon */
 i.fa-bars {
     display: none;
@@ -87,9 +94,13 @@ i.fa-bars {
     background-clip: text;
     color: transparent;
 }
+
+
+
 /* Media queries voor Header en Footer */
 /* telefoon */
 @media screen and (max-width: 480px) {
+    /*----------------Header + menu*------------------------------*/
     /* laat alleen eerste li element zien */
     li:not(:first-child) {
         display: none; /* display only the first item in de menu list */
@@ -110,6 +121,32 @@ i.fa-bars {
     }
     .toggler:checked ~ footer {
         background-color: darkblue;
+    }
+    /*------------------footer------------------------------*/
+    footer {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+    /*footercolumns */
+    .footercolumn {
+        width: 100%;
+        margin: 15px 15px;
+    }
+    /*verschillende content p h3 en de social media icons in de footer columns*/
+    .footercolumn p, h3, .social-media-icons {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footercolumn  p {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .footercolumn h3 {
+        margin-top: 25px;
     }
 
 }
