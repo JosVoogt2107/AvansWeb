@@ -12,20 +12,23 @@
 */
 nav {
     height: 50px;
-    background-color: rgb(48, 46, 46);
+    background-color: rgb(27, 26, 26);
 }
 /* 
 * zet de positie van de titel op absolute zo wordt het relatief dicht
 * bij zijn parent geplaatst met een top zet je het iets naar beneden de nav dan er tegen aan
 * en zet het iets verder naar links. De tekst is wit en is dikgedrukt 
-* en heeft is een ander lettertype + letter spacing.
+* en heeft is een ander lettertype
 */
 nav h1 {
     position: absolute;
     top: 7px;
     left: 5%;
     color: white;
+    letter-spacing: 2px;
     font-weight: bold;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 40px;
 }
 /* 
 * de unorderd list wordt aan de rechtst uitgelijnd en iets verder naar links gezet
@@ -65,7 +68,9 @@ nav ul li:hover {
 nav ul li a {
     position: relative;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Odibee Sans', cursive;
     text-decoration: none;
 }
 /* 
@@ -136,7 +141,7 @@ header .header-image {
     */
     nav ul li {
         display: block;
-        margin: 40px 0;
+        margin: 25px 0;
         line-height: 30px;
     }
     /* 

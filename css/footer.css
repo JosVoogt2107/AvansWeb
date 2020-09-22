@@ -14,7 +14,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(48, 46, 46);
+    background-color:  rgb(27, 26, 26);
     height: 200px;
     width: 100%;
 
@@ -28,7 +28,7 @@ footer .footercolumn {
     width: 33.3333%;
     color: white;
     text-align: left;
-    margin: 0 120px;
+    margin: 0 110px;
     height: 100%;
 }
 /*
@@ -39,21 +39,23 @@ footer .footercolumn {
 */
 footer .footercolumn h3 {
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 2px;
 }
 /*
 * zet de font naar verdana en verander de groote van de tekst.
 */
 footer .footercolumn p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
 }
 /* 
 * Geef de socialmedia iconen een fontsize die 2x zo groot is 
 * tenopzichte van het root element. en geeft het een padding van 5px aan beide kanten.
 */
 footer .footercolumn .socialmedia-icons {
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding: 0 5px;
 }
 /*------------- Einde footer ----------------- */
@@ -100,7 +102,7 @@ footer .footercolumn .socialmedia-icons {
     */
     footer {
         position: relative;
-        height: 450px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: left;
