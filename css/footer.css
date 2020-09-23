@@ -15,16 +15,15 @@ footer {
     justify-content: center;
     align-items: center;
     background-color:  rgb(27, 26, 26);
-    height: 200px;
+    height: 215px;
     width: 100%;
-
 }
 /*
 * omdat er 3 footercolums zijn krijgt ieder dezelfde breedte 33.3333%
 * de tekst moet links uitlijnen en de tekst kleur is wit.
 * aan beide kanten wordt een margin gezet en een bepaalde hoogte.
 */
-footer .footercolumn {
+.footercolumn {
     width: 33.3333%;
     color: white;
     text-align: left;
@@ -37,16 +36,16 @@ footer .footercolumn {
 * en een margin op de titel iets van de footer af te zetten en van de teskt eronder.
 * en er is een nieuw lettertype.
 */
-footer .footercolumn h3 {
-    margin: 20px 0;
+.footercolumn h3 {
+    margin: 25px 0;
     font-size: 25px;
     font-family: 'Odibee Sans', cursive;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 /*
 * zet de font naar verdana en verander de groote van de tekst.
 */
-footer .footercolumn p {
+.footercolumn p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
@@ -54,7 +53,7 @@ footer .footercolumn p {
 * Geef de socialmedia iconen een fontsize die 2x zo groot is 
 * tenopzichte van het root element. en geeft het een padding van 5px aan beide kanten.
 */
-footer .footercolumn .socialmedia-icons {
+.footercolumn .socialmedia-icons {
     font-size: 2.1rem;
     padding: 0 5px;
 }
@@ -88,20 +87,18 @@ footer .footercolumn .socialmedia-icons {
 }
 
 
-
-
-
 /*-------------------------------------Start footer mobile-----------------------------*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     /* 
     * geeft de footer tag de display flex voor de responsive
     * en de direction op column om de class .footercolumn onder elkaar te
     * krijgen. align-items zorgt ervoor dat de items link aahouden.
-    * de footer heeft een height van 450 px en gepositioneerd ten opzichte van
+    * de footer heeft een height van 500 px en gepositioneerd ten opzichte van
     * zijn statische positie
     */
     footer {
         position: relative;
+        bottom: 0;
         height: 500px;
         display: flex;
         flex-direction: column;
@@ -111,7 +108,7 @@ footer .footercolumn .socialmedia-icons {
     * zet de volledige breedte voor de footercolumn
     * en geeft overal een margin aan de kolom.
     */
-    footer .footercolumn {
+    .footercolumn {
         width: 100%;
         margin: 15px;
     }
@@ -120,7 +117,7 @@ footer .footercolumn .socialmedia-icons {
     * aan de linker en rechter kant. plus dat de text
     * links wordt gezet
     */
-    footer .footercolumn p, h3 {
+    .footercolumn p, h3 {
         text-align: left;
         padding: 0 20px;
     }
@@ -129,24 +126,41 @@ footer .footercolumn .socialmedia-icons {
     * dichter bij de h3 tag staat en het
     * veranderen van de font size
     */
-    footer .footercolumn  p {
-        font-size: 14px;
-        margin-top: -10px;
+    .footercolumn  p {
+        font-size: 16px;
+        margin-top: -5px;
     }
     /* 
     * geeft een spacing 
     * aan de top van de tag h3
     */
-    footer .footercolumn h3 {
+    .footercolumn h3 {
         margin-top: 25px;
     }
     /* 
     * het uitlijnen van de icons naar links +
     * padding te geven aan allebei de kanten
     */
-    footer .footercolumn .socialmedia-icons {
+    .footercolumn .socialmedia-icons {
         text-align: left;
         padding: 0 20px;
     }
 }
 /*--------------------------------- einde footer mobile ----------------------------*/
+
+/*-------------------------------------Start footer Tablet-----------------------------*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    footer {
+        height: 225px;
+    }
+    .footercolumn {
+        margin: 0 50px;
+    }
+    .footercolumn p {
+        font-size: 14px;
+    }
+    .footercolumn h3 {
+        font-size: 20px;
+    }
+}
+/*-------------------------------------end footer Tablet-----------------------------*/
