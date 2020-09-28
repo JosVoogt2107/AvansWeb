@@ -1,0 +1,91 @@
+main h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* contact pagina */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+}
+.contact-container h2 {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+/* contact tekst blok */
+.contact-tekst {
+    width: 50%;
+    padding: 20px;
+    margin:  0px 20px 0 50px;
+}
+.contact-tekst p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 55px;
+}
+
+/* contact formulier */
+.contact-form {
+    width: 50%;
+    margin: 0 20px 0 20px;
+    padding: 20px;
+}
+.contact-form form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.form-row {
+    margin: 15px;
+}
+/* first row in the contact form */
+.form-row.row1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-naam, .form-email {
+    width: 50%;
+}
+.form-row.row1 input {
+    margin-bottom: 15px;
+    width: 93%;
+    height: 25px;
+    border-radius: 5px;
+}
+.form-row.row2 textarea {
+    width: 97%;
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+}
+.form-row.row3 button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid  rgb(3, 243, 131);
+    background-color:  rgb(3, 243, 131);
+    color: white;
+    height: 50px;
+    width: 125px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+.contact-form h2 {
+    text-align: center;
+}
+/* google maps */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}

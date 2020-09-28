@@ -1,12 +1,4 @@
 /*--------------------- start footer -----------------------*/
-/* 
-* de footer is gepositioneerd met de waarde relative zodat het element wordt gezet 
-* ten opzichte van de statische positie en met bottom word aan gegeven dat het
-* onder aan de pagina moet staan. de flex direction is row zodat alles op een rij blijft
-* inplaats van onder elkaar. met justify content worden de flex items in het midden van rij gezet
-* en met alig- items worden ze ook midden in de footer gezet verticaal.
-* er wordt een achtergondkleur gekozen en de breedte en hoogte wordt gezet
-*/
 footer {
     position: relative;
     bottom: 0;
@@ -18,11 +10,7 @@ footer {
     height: 215px;
     width: 100%;
 }
-/*
-* omdat er 3 footercolums zijn krijgt ieder dezelfde breedte 33.3333%
-* de tekst moet links uitlijnen en de tekst kleur is wit.
-* aan beide kanten wordt een margin gezet en een bepaalde hoogte.
-*/
+
 .footercolumn {
     width: 33.3333%;
     color: white;
@@ -30,55 +18,33 @@ footer {
     margin: 0 110px;
     height: 100%;
 }
-/*
-* de titel van de kolom geeft je een fotn size van 20px
-* je geeft het een margin-top om van de rand van de footer af te zitten
-* en een margin op de titel iets van de footer af te zetten en van de teskt eronder.
-* en er is een nieuw lettertype.
-*/
+
 .footercolumn h3 {
     margin: 25px 0;
     font-size: 25px;
     font-family: 'Odibee Sans', cursive;
     letter-spacing: 3px;
 }
-/*
-* zet de font naar verdana en verander de groote van de tekst.
-*/
+
 .footercolumn p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
-/* 
-* Geef de socialmedia iconen een fontsize die 2x zo groot is 
-* tenopzichte van het root element. en geeft het een padding van 5px aan beide kanten.
-*/
+
 .footercolumn .socialmedia-icons {
     font-size: 2.1rem;
     padding: 0 5px;
 }
 /*------------- Einde footer ----------------- */
-/*
-* geef de facebook icoontje de juiste kleur als er met de muis overheen wordt gegaan
-*/
+
 .fa-facebook:hover {
     color: #3b5998;
 }
-/*
-* geef het twitter icoontje de juiste kleur als er met de muis overheen wordt gegaan
-*/
+
 .fa-twitter:hover {
     color: #1da1f2;
 }
-/*
-* geef het instragam icoontje de juiste kleur als er met de muis overheen wordt gegaan
-* doormiddel van een radical-gradient de circel zelf begint op een positie 30% 100%
-* er wordt op verschillende posities de juiste kleur neergezet ook wordt 
-* de background clip op op text gezet om alleen de tekst zelf te pakken en niks 
-* daarbuiten of daarbinen in het icoon te kleuren
-* heeft de prefix webkit nodig om het te laten werken in chrome/safari en een transparatie om
-* de background-color in de tekst te krijgen.
-*/
+
 .fa-instagram:hover {
     background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
@@ -89,13 +55,7 @@ footer {
 
 /*-------------------------------------Start footer mobile-----------------------------*/
 @media screen and (max-width: 768px) {
-    /* 
-    * geeft de footer tag de display flex voor de responsive
-    * en de direction op column om de class .footercolumn onder elkaar te
-    * krijgen. align-items zorgt ervoor dat de items link aahouden.
-    * de footer heeft een height van 500 px en gepositioneerd ten opzichte van
-    * zijn statische positie
-    */
+
     footer {
         position: relative;
         bottom: 0;
@@ -104,43 +64,26 @@ footer {
         flex-direction: column;
         align-items: left;
     }
-    /* 
-    * zet de volledige breedte voor de footercolumn
-    * en geeft overal een margin aan de kolom.
-    */
+
     .footercolumn {
         width: 100%;
         margin: 15px;
     }
-    /* 
-    * zorgt er voor dat de tags p en h3 padding hebben
-    * aan de linker en rechter kant. plus dat de text
-    * links wordt gezet
-    */
+
     .footercolumn p, h3 {
         text-align: left;
         padding: 0 20px;
     }
-    /* 
-    * zet de margin-top naar -10 zoadat het
-    * dichter bij de h3 tag staat en het
-    * veranderen van de font size
-    */
+
     .footercolumn  p {
         font-size: 16px;
         margin-top: -5px;
     }
-    /* 
-    * geeft een spacing 
-    * aan de top van de tag h3
-    */
+
     .footercolumn h3 {
         margin-top: 25px;
     }
-    /* 
-    * het uitlijnen van de icons naar links +
-    * padding te geven aan allebei de kanten
-    */
+
     .footercolumn .socialmedia-icons {
         text-align: left;
         padding: 0 20px;
@@ -149,7 +92,7 @@ footer {
 /*--------------------------------- einde footer mobile ----------------------------*/
 
 /*-------------------------------------Start footer Tablet-----------------------------*/
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
     footer {
         height: 225px;
     }

@@ -7,21 +7,14 @@
 }
 
 /*-----------------------------start header -------------------*/
-/* 
-* zet de hoogte en de kleur van de nav
-*/
+
 nav {
     height: 50px;
     background-color: rgb(27, 26, 26);
     position: fixed;
     width: 100%;
 }
-/* 
-* zet de positie van de titel op absolute zo wordt het relatief dicht
-* bij zijn parent geplaatst met een top zet je het iets naar beneden de nav dan er tegen aan
-* en zet het iets verder naar links. De tekst is wit en is dikgedrukt 
-* en heeft is een ander lettertype
-*/
+
 nav h1 {
     position: absolute;
     top: 7px;
@@ -32,41 +25,27 @@ nav h1 {
     font-family: 'Odibee Sans', cursive;
     font-size: 36px;
 }
-/* 
-* de unorderd list wordt aan de rechtst uitgelijnd en iets verder naar links gezet
-* door de margin-right ook moet het geen style hebben (geen bolletjes bij een list)
-*/
+
 nav ul {
     float: right;
     margin-right: 35px;
     list-style: none;
 }
-/* 
-* zorgt dat de list items inline worden geplaats en niet over een nieuwe regel.
-* de hoogte van d elijn wordt gezet en aan beide kanten wordt padding gegeven
-*/
+
 nav ul li {
     display: inline-block;
     line-height: 50px;
     padding: 0 15px;
 }
-/* 
-* zet de kleur voor de pagina waar de gebruiker zich bevindt.
-*/
+
 .activepage {
     background-color: rgb(3, 243, 131);
 }
-/* 
-* zet de kleur van de list items als er met de muis over heen wordt gegaan
-*/
+
 nav ul li:hover {
     background-color: rgb(3, 243, 131);
 }
-/* 
-* het element wordt gepositioneerd ten opzichte van zijn statische positie
-* de tekst kelur wordt wit en er wordt een ander font size neergezet ook 
-* wordt er geen text decoratie neergezet zoals een lijn eronder + nieuwe lettertype
-*/
+
 nav ul li a {
     color: white;
     font-size: 25px;
@@ -74,12 +53,7 @@ nav ul li a {
     font-family: 'Odibee Sans', cursive;
     text-decoration: none;
 }
-/* 
-* zet de grote van de font van de 2 iconen open en close van het menu
-* kleur naar wit en rechts uitgelijnd. ook wordt de lijn hoogte gezet hetzelfde als de li
-* en geeft het een margin-right om het iets van de rechterkant te houden.
-* display op none om het niet zichbaar te maken voor een normaal scherm.
-*/
+
 #open-menu, #close-menu {
     font-size: 30px;
     color: white;
@@ -88,20 +62,24 @@ nav ul li a {
     margin-right: 30px;
     display: none;
 }
-/* 
-* dit is de checkbox die in het menu staat. mag niet 
-* zichtbaar zijn op een normaal scherm.
-*/
+
 #menu {
     display: none;
 }
-/*
-* 
-*/
+
+/*header-image*/
 .header-image {
     background-image: url('../img/DAL-header.jpg');
     background-size: cover;
     background-position: 40% 100%;
+    height: 70vh;
+    border-bottom: 2px solid rgb(48, 46, 46);
+}
+/* second-header-image */
+.second-header-image {
+    background-image: url('../img/noragami-header.jpg');
+    background-size: cover;
+    background-position: 20% 100%;
     height: 70vh;
     border-bottom: 2px solid rgb(48, 46, 46);
 }
@@ -111,21 +89,11 @@ nav ul li a {
 
 /*------------------- start header telefoon ------------------*/
 @media screen and (max-width: 768px) {
-    /* 
-    * laat het icoontje om het menu te open zien.
-    */
+
     #open-menu {
         display: block;
     }
-    /* 
-    * geef de unorderded list de positie absolute 
-    * het element blijft relatief dicht bij de parent (nav)
-    * geef het een top om iets onder de zwarte nav neer te zetten
-    * en -100% left zodat het net buiten de viewpoort verschijnt.
-    * de hoogt van de list is de volledige viewpoort hoogte (100vh) en de volledige width
-    * zet een andere achtergrond kleur en een transitie om het mooi over te laten lopen
-    * met de z-index zog je dat de list over de content tevoorschijn komt.
-    */
+
     nav ul {
         position: absolute;
         top: 50px;
@@ -137,36 +105,25 @@ nav ul li a {
         transition: .5s;
         z-index: 10;
     }
-    /* 
-    * zet de de lijn hoogte van het block element en geef het een margin top en bottom
-    */
+
     nav ul li {
         display: block;
         margin: 25px 0;
         line-height: 30px;
     }
-    /* 
-    * zet de fontsize van a tag
-    */
+
     nav ul li a {
         font-size: 25px;
     }
-    /* 
-    * als er op de open-menu wordt geklikt is de checkbox ook gechecked 
-    * dan wordt de left positie naar 0 gezet van de ul om het binnen de viewport te houden.
-    */
+
     #menu:checked ~ ul {
         left: 0;
     }
-    /* 
-    * als de checkbox is gechecked moet het open-menu icoon niet zichtbaar worden
-    */
+
     #menu:checked ~ #open-menu {
         display: none;
     }
-    /* 
-    * als de checkbox is gechecjed moet het close-menu icoon zichtbaar worden
-    */
+
     #menu:checked ~ #close-menu {
         display: block;
     }
