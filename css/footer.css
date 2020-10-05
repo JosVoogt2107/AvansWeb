@@ -22,34 +22,30 @@ footer {
 .footercolumn h3 {
     margin: 25px 0;
     font-size: 25px;
-    font-family: 'Odibee Sans', cursive;
-    letter-spacing: 3px;
 }
 
-.footercolumn p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-
-.footercolumn .socialmedia-icons {
+.socialmedia-icons {
     font-size: 2.1rem;
-    padding: 0 5px;
 }
 /*------------- Einde footer ----------------- */
 
 .fa-facebook:hover {
     color: #3b5998;
+    transition: 0.5s;
+    transform: rotateY(180deg);
 }
-
 .fa-twitter:hover {
     color: #1da1f2;
+    transition: 0.5s;
+    transform: rotateY(180deg);
 }
-
 .fa-instagram:hover {
     background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    transition: 0.5s;
+    transform: rotateY(180deg);
 }
 
 
@@ -84,7 +80,7 @@ footer {
         margin-top: 25px;
     }
 
-    .footercolumn .socialmedia-icons {
+    .socialmedia-icons {
         text-align: left;
         padding: 0 20px;
     }

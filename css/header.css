@@ -20,9 +20,7 @@ nav h1 {
     top: 7px;
     left: 5%;
     color: white;
-    letter-spacing: 2px;
     font-weight: bold;
-    font-family: 'Odibee Sans', cursive;
     font-size: 36px;
 }
 
@@ -68,20 +66,31 @@ nav ul li a {
 }
 
 /*header-image*/
-.header-image {
-    background-image: url('../img/DAL-header.jpg');
+.headerimage {
     background-size: cover;
-    background-position: 40% 100%;
     height: 70vh;
     border-bottom: 2px solid rgb(48, 46, 46);
 }
+.headerimage.DAL {
+    background-image: url('../img/Header/DAL-header.jpg');
+    background-position: 40% 100%;
+}
 /* second-header-image */
-.second-header-image {
-    background-image: url('../img/noragami-header.jpg');
-    background-size: cover;
+.headerimage.noragami {
+    background-image: url('../img/Header/noragami-header.jpg');
     background-position: 20% 100%;
-    height: 70vh;
-    border-bottom: 2px solid rgb(48, 46, 46);
+}
+.headerimage.bleach {
+    background-image: url('../img/Header/bleach-header.jpg');
+    background-position: 50% 100%;
+}
+.headerimage.yaksha {
+    background-image: url('../img/Header/white-yaksha-header.png');
+    background-position: 35% 100%;
+}
+.headerimage.kny {
+    background-image: url('../img/Header/demonslayer-header.jpg');
+    background-position: 40% 100%;
 }
 /*-----------------------------End header -------------------*/
 
@@ -100,9 +109,9 @@ nav ul li a {
         left: -100%;
         height: 100vh;
         width: 100%;
+        transition: 0.5s;
         background-color: rgb(3, 243, 131);
         text-align: center;
-        transition: .5s;
         z-index: 10;
     }
 
@@ -122,6 +131,7 @@ nav ul li a {
 
     #menu:checked ~ #open-menu {
         display: none;
+        
     }
 
     #menu:checked ~ #close-menu {

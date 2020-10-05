@@ -23,16 +23,14 @@
             <h1>Anime Channel</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-                <li><a href="bigthree.html">Big 3</a></li>
+                <li><a href="bigthree.html">The Big 3</a></li>
                 <li><a href="overons.html">Over Ons</a></li>
-                <li><a href="tekst2.html">Tekst</a></li>
-                <li><a href="image-gallery.html">Image Gallery</a></li>
+                <li><a href="animelist.html">Anime List</a></li>
                 <li class="activepage"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <!-- Header image-->
-        <div class="second-header-image"></div>
+        <div class="headerimage noragami"></div>
     </header>
     <!-- main content-->
     <main>
@@ -41,50 +39,66 @@
                 <h2>Informatie</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean tempus velit at dolor consectetur bibendum. 
-                    Proin fringilla maximus quam. Sed feugiat lorem et urna dignissim,
-                    et gravida lectus egestas. Maecenas ante dui, blandit ut magna vitae,
-                    lobortis sodales purus. Curabitur lacinia nec dolor id facilisis.
-                    Etiam nec ligula enim. Maecenas egestas quis ante sit amet venenatis.
-                    Cras sed lectus ante. Ut in justo eget leo dictum gravida.
-                    Cras tempor molestie tempus. In eleifend lacus suscipit mauris fringilla,
-                    ac fringilla purus.
+                    Quisque eu venenatis diam. 
+                    Morbi scelerisque dolor sit amet imperdiet tincidunt. Vivamus porttitor, 
+                    ex at fermentum malesuada, libero tellus volutpat sem, 
+                    sed feugiat neque urna eu odio. 
+                    Vivamus vitae tellus sed velit maximus pharetra. 
+                    Nullam tempor vel risus ut pretium. Morbi vitae auctor magna. 
+                    Vestibulum sagittis felis vel tristique semper. 
+                    Phasellus facilisis elit sit amet lacus aliquet elementum. 
+                    Aenean venenatis orci nec ex tristique dapibus. Sed erat ante, 
+                    pharetra ut lorem egestas, posuere maximus purus. 
+                    Duis ultrices arcu at dolor molestie, nec aliquam lacus pulvinar. 
+                    In pulvinar pulvinar nibh, quis pharetra velit condimentum quis.
                 </p>
             </div>
             <div class="contact-form">
                 <h2>Bericht versturen</h2>
                 <form>
-                    <div class="form-row row1">
-                        <div class="form-naam">
+                    <div class="form-row">
+                        <div class="form-input">
                             <label>Naam:</label><br>
                             <input type="text" placeholder=" uw naam"/>
                         </div>
-                        <div class="form-email">
+                        <div class="form-input">
                             <label>Email:</label><br>
                             <input type="email" placeholder=" uw email"/>
                         </div>
                     </div>
-                    <div class="form-row row2">
-                        <div class="form-onderwerp">
-                            <label>Onderwerp:</label><br>
-                            <input type="text" placeholder=" uw onderwerp"/>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="man">Man:</label>
+                            <input type="radio" name="sex"><br>
+                            <label for="vrouw">Vrouw:</label>
+                            <input type="radio" name="sex">
                         </div>
                     </div>
-                    <div class="form-row row3">
-                        <div class="form-bericht">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label>Onderwerp:</label><br>
+                            <select>
+                                <option>Kies onderwerp</option>
+                                <option>Vraag</option>
+                                <option>Recommendation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row-textarea">
+                        <div>
                             <label>Bericht:</label><br>
                             <textarea></textarea>
                         </div>
                     </div>
-                    <div class="form-row row4">
-                        <div class="form-verzend">
+                    <div class="form-row4">
+                        <div>
                             <button>verzenden</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="googlemaps">
+        <div>
             <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyACij03D1H06CjFEtPMYqasT7xKlPypbZ8&q=heuveltilburg"></iframe>
         </div>
     </main>
@@ -94,9 +108,9 @@
             <!-- kolom voor adres-->
             <h3>Adres</h3>
             <p>
-                <b>Adres:</b><i> Akihabara 17</i><br>
-                <b>Postcode:</b><i> 2299, Isekai wereld 23</i><br>
-                <b>Telefoon:</b><i> 080-0919-8100</i>
+                <strong>Adres:</strong><em> Akihabara 17</em><br>
+                <strong>Postcode:</strong><em> 2299, Isekai wereld 23</em><br>
+                <strong>Telefoon:</strong><em> 080-0919-8100</em>
             </p>
         </div>
         <div class="footercolumn">
