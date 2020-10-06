@@ -1,7 +1,6 @@
 main h1 {
     text-align: center;
     margin-top: 25px;
-    margin-left: 25px;
     font-size: 40px;
 }
 p {
@@ -14,6 +13,9 @@ h4,h3, h2, h1 {
 }
 h2 {
     font-size: 38px;
+}
+h4 {
+    font-size: 32px;
 }
 section {
     display: flex;
@@ -30,7 +32,7 @@ img {
 }
 form {
     display: flex;
-    padding: 10px;
+    padding: 15px;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -42,9 +44,10 @@ form {
 /*on web form */
 input {
     margin-bottom: 15px;
-    width: 93%; /* lengte van de input tag zelf */
+    width: 90%; /* lengte van de input tag zelf */
     height: 25px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 /*on web form*/
 input[type=radio] {
@@ -53,8 +56,8 @@ input[type=radio] {
 }
 /* on web form */
 select {
-    margin-top: 5px;
-    width: 93%;
+    margin-left: -5px;
+    width: 45%;
     height: 40px;
     color: white;
     background-color:  rgb(3, 243, 131);
@@ -66,14 +69,14 @@ select {
 /* on web form */
 option {
     background-color: rgb(48, 46, 46);
-
 }
 /* on web form */
 textarea {
-    width: 97%;
+    width: 93%;
     height: 150px;
     resize: none;
     border-radius: 5px;
+    border: 1px solid black;
 }
 /* knop van het formulier */
 button {
@@ -86,6 +89,11 @@ button {
     width: 125px;
     font-weight: bold;
     font-size: 16px;
+}
+button:hover {
+    background-color: rgb(27, 26, 26);
+    border: 1px solid rgb(27, 26, 26);
+    transition: 0.5s;
 }
 /* google maps */
 iframe {
@@ -103,24 +111,22 @@ iframe {
 .inleiding p {
     width: 50%;
     margin-top: 25px;
-    font-size: 18px;
+    text-align: center;
 }
 
 /* Article on Big three page */
-.article {
+.blog {
     margin: 50px 30px;
     display: flex;
     flex-direction: row;
 }
-.article h2 {
-    margin: 0 0 5px 25px;
+.blog h2 {
     padding: 15px;
 }
-.article p {
-    margin-left: 25px;
+.blog p {
     padding: 15px;
 }
-.tekst {
+.text-column {
     width: 50%;
 }
 /*image in de  article row */
@@ -131,24 +137,24 @@ iframe {
 }
 
 /* over ons */
-.aboutus, .aboutus.image {
+.post, .post.image {
     margin-top: 50px;
     width: 33.33333%;
     border: none;
     padding: 15px;
 }
-.aboutus h2 {
+.post h2 {
     text-align: left;
     margin-bottom: 20px;
 }
-.aboutus-container {
+.container {
     display: flex;
     margin: 25px;
     flex-direction: row;
     justify-content: space-around;
 
 }
-.aboutus-container > div {
+.container > div {
     padding: 15px;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -192,7 +198,7 @@ iframe {
 }
 .card:hover {
     transition: 1s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 10px 10px 20px rgba(48, 46, 46);
 
 }
@@ -200,7 +206,6 @@ iframe {
 .card > div {
     padding: 10px;
     text-align: center;
-    font-size: 32px;
 }
 .card > img {
     border-radius: 5px 5px 0 0;
@@ -216,12 +221,12 @@ iframe {
     margin-bottom: 30px;
 }
 /* contact tekst blok */
-.contact-tekst {
+.contact-text {
     width: 50%;
     padding: 20px;
     margin:  0px 20px 0 50px;
 }
-.contact-tekst p {
+.contact-text p {
     margin-top: 55px;
 }
 /* contact formulier */
@@ -238,7 +243,11 @@ iframe {
 }
 /*input velden van contact */
 .form-input {
-    width: 50%; /* width is 50 omdat ze in dezelfde div zitten */
+    margin-left: -5px;
+    width: 50%;
+}
+.form-select {
+    width: 100%;
 }
 /* colum titel */
 .contact-form h2 {
@@ -250,11 +259,18 @@ iframe {
         width: 100%;
     }
     textarea {
-        width: 100%;
+        width: 96%;
         height: 300px;
     }
     button {
-        width: 100%;
+        width: 96%;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    h4 {
         font-size: 20px;
     }
     .contact-container {
@@ -262,13 +278,13 @@ iframe {
         flex-direction: column;
     }
     /* contact tekst blok */
-    .contact-tekst {
+    .contact-text {
         width: 90%;
         margin: 0;
         padding: 15px;
     }
-    .contact-tekst p {
-        margin-top: 30px
+    .contact-text h2 {
+        margin-bottom: -20px;
     }
     /*contact form */
     .contact-form {
@@ -285,34 +301,37 @@ iframe {
         align-items: start;
     }
     .form-input {
-        width: 100%; /* width is 50 omdat ze in dezelfde div zitten */
+        width: 100%;
     }
-}
-/* responsive phone big 3 */
-@media screen and (max-width: 480px) {
+    .form-select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
     .inleiding {
-        width: 80%;
         text-align: center;
-        margin-left: 25px;
         margin-bottom: 35px;
+        padding: 20px;
     }
     .inleiding p {
         width: 100%;
         padding: 15px;
-        margin-left: 25px;
         text-align: center;
     }
-    .article {
+    .blog {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 0;
         padding: 0;
     }
-    .article h2, .article p {
-        margin: 0;
+    .blog p {
+        margin: 20px;
+        margin-top: -10px;
     }
-    .article .tekst{
+    .blog h2 {
+        margin-left: 20px;
+    }
+    .blog .text-column{
         width: 100%;
     }
     .image-container {
@@ -321,46 +340,97 @@ iframe {
         padding: 0;
         height: 70vh;
     }
-
-}
-/*responsive phone About us */
-@media screen and (max-width: 480px) {
-    .aboutus-container {
+    .container {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
-    .aboutus-container > div {
+    .container > div {
         border: none;
         text-align: center;
     }
-    .aboutus {
+    .post {
         margin: 20px;
         width: 80%;
     }
-    .aboutus h2 {
-        text-align: center
+    .post h2 {
+        text-align: left;
     }
-    .aboutus.image {
+    .post.image {
         margin: 0 0 -5px 0;
         padding: 0;
         width: 100%;
     }
-}
-@media screen and (max-width: 480px) {
     .card {
         width: 40%;
-    }
-    .card > div {
         font-size: 20px;
     }
     .card > img {
         height: 75%;
     }
+    .video {
+        width: 100%;
+        height: 250px;
+    }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    textarea {
+        height: 200px;
+        width: 97%;
+    }
+    select, input {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+    h4 {
+        font-size: 26px;
+    }
+    .contact-form {
+        width: 60%;
+    }
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-input {
+        width: 100%;
+    }
+    .contact-text {
+        width: 40%;
+    }
+    .contact-text p {
+        margin-top: -5px;
+    }
+    .card > img {
+        height: 75%;
+    }
+    .container:nth-child(2) {
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-top: -20px;
+    }
+    .post {
+        width: 45%;
+    }
+    .post.image {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 918px) {
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-column, .image-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     .video {
         width: 100%;
         height: 300px;
     }
+
 }

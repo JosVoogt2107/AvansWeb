@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheet links -->
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contact</title>
 </head>
+
 <body>
     <!-- header -->
     <header>
         <nav>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <i class="fa fa-bars"  id="open-menu"></i>
-                <i class="fa fa-times" id="close-menu"></i>
-            </label>
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="fa fa-bars" id="open-menu"></label>
+            <label for="menu" class="fa fa-times" id="close-menu"></label>
             <h1>Anime Channel</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="bigthree.html">The Big 3</a></li>
                 <li><a href="overons.html">Over Ons</a></li>
                 <li><a href="animelist.html">Anime List</a></li>
-                <li class="activepage"><a href="contact.html">Contact</a></li>
+                <li class="active-page"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <!-- Header image-->
-        <div class="headerimage noragami"></div>
+        <div id="noragami-header" class="header-image"></div>
     </header>
     <!-- main content-->
     <main>
         <div class="contact-container">
-            <div class="contact-tekst">
+            <div class="contact-text">
                 <h2>Informatie</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque eu venenatis diam. 
-                    Morbi scelerisque dolor sit amet imperdiet tincidunt. Vivamus porttitor, 
-                    ex at fermentum malesuada, libero tellus volutpat sem, 
-                    sed feugiat neque urna eu odio. 
-                    Vivamus vitae tellus sed velit maximus pharetra. 
-                    Nullam tempor vel risus ut pretium. Morbi vitae auctor magna. 
-                    Vestibulum sagittis felis vel tristique semper. 
-                    Phasellus facilisis elit sit amet lacus aliquet elementum. 
-                    Aenean venenatis orci nec ex tristique dapibus. Sed erat ante, 
-                    pharetra ut lorem egestas, posuere maximus purus. 
-                    Duis ultrices arcu at dolor molestie, nec aliquam lacus pulvinar. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque eu venenatis diam.
+                    Morbi scelerisque dolor sit amet imperdiet tincidunt. Vivamus porttitor,
+                    ex at fermentum malesuada, libero tellus volutpat sem,
+                    sed feugiat neque urna eu odio.
+                    Vivamus vitae tellus sed velit maximus pharetra.
+                    Nullam tempor vel risus ut pretium. Morbi vitae auctor magna.
+                    Vestibulum sagittis felis vel tristique semper.
+                    Phasellus facilisis elit sit amet lacus aliquet elementum.
+                    Aenean venenatis orci nec ex tristique dapibus. Sed erat ante,
+                    pharetra ut lorem egestas, posuere maximus purus.
+                    Duis ultrices arcu at dolor molestie, nec aliquam lacus pulvinar.
                     In pulvinar pulvinar nibh, quis pharetra velit condimentum quis.
                 </p>
             </div>
@@ -59,11 +58,11 @@
                     <div class="form-row">
                         <div class="form-input">
                             <label>Naam:</label><br>
-                            <input type="text" placeholder=" uw naam"/>
+                            <input type="text" placeholder=" uw naam" />
                         </div>
                         <div class="form-input">
                             <label>Email:</label><br>
-                            <input type="email" placeholder=" uw email"/>
+                            <input type="email" placeholder=" uw email" />
                         </div>
                     </div>
                     <div class="form-row">
@@ -75,8 +74,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-input">
-                            <label>Onderwerp:</label><br>
+                        <div class="form-select">
                             <select>
                                 <option>Kies onderwerp</option>
                                 <option>Vraag</option>
@@ -90,16 +88,15 @@
                             <textarea></textarea>
                         </div>
                     </div>
-                    <div class="form-row4">
-                        <div>
-                            <button>verzenden</button>
-                        </div>
+                    <div class="form-row">
+                        <button>verzenden</button>
                     </div>
                 </form>
             </div>
         </div>
         <div>
-            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyACij03D1H06CjFEtPMYqasT7xKlPypbZ8&q=heuveltilburg"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyACij03D1H06CjFEtPMYqasT7xKlPypbZ8&q=heuveltilburg"></iframe>
         </div>
     </main>
     <!-- footer-->
@@ -109,7 +106,7 @@
             <h3>Adres</h3>
             <p>
                 <strong>Adres:</strong><em> Akihabara 17</em><br>
-                <strong>Postcode:</strong><em> 2299, Isekai wereld 23</em><br>
+                <strong>Postcode:</strong><em> 2299, Isekai world 23</em><br>
                 <strong>Telefoon:</strong><em> 080-0919-8100</em>
             </p>
         </div>
@@ -117,9 +114,9 @@
             <!-- disclaimer not official-->
             <h3>Disclaimer</h3>
             <p>
-                This is not the official site for all 
+                This is not the official site for all
                 the anime online. <br>
-                Just my list of my favorite anime <br> 
+                Just my list of my favorite anime <br>
                 and many anime related content.
             </p>
         </div>
@@ -134,4 +131,5 @@
         </div>
     </footer>
 </body>
+
 </html>

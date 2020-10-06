@@ -1,0 +1,300 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/*navigation */
+nav {
+    height: 50px;
+    background-color: rgb(27, 26, 26);
+    position: fixed;
+    width: 100%;
+}
+
+/*navigation list */
+nav ul {
+    float: right;
+    margin-right: 35px;
+    list-style: none;
+}
+
+/* navigation list item */
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 15px;
+}
+
+/* hover on navigation list item */
+nav ul li:hover {
+    animation-name: colornav;
+    animation-duration: 2s;
+    animation-delay: 0.2s
+}
+
+nav ul li a {
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Odibee Sans', cursive;
+    text-decoration: none;
+}
+
+/* active page */
+.active-page {
+    transition: 0.2s;
+    background-color: rgb(3, 243, 131);
+}
+
+/* icons open and close menu */
+#menu {
+    display: none;
+}
+
+#open-menu,
+#close-menu {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 30px;
+    display: none;
+}
+
+/* titel in navigation */
+nav h1 {
+    position: absolute;
+    top: 7px;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 26, 26);
+    height: 215px;
+    width: 100%;
+}
+
+/*footer column */
+.footercolumn {
+    width: 33.3333%;
+    color: white;
+    text-align: left;
+    margin: 0 110px;
+    height: 100%;
+}
+
+/*footer column title */
+.footercolumn h3 {
+    margin: 25px 0;
+    font-size: 25px;
+}
+
+.socialmedia-icons {
+    font-size: 2.1rem;
+}
+
+/* facebook icon */
+.fa-facebook:hover {
+    color: #3b5998;
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+
+/* twitter icon */
+.fa-twitter:hover {
+    color: #1da1f2;
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+
+/* instagram icon */
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+
+/*header-image*/
+.header-image {
+    background-size: cover;
+    height: 70vh;
+    border-bottom: 2px solid rgb(48, 46, 46);
+}
+
+/* Date a Live header image */
+#dal-header {
+    background-image: url('../img/Header/DAL-header.jpg');
+    background-position: 40% 100%;
+}
+
+/* Noragami header image */
+#noragami-header {
+    background-image: url('../img/Header/noragami-header.jpg');
+    background-position: 20% 100%;
+}
+
+/* Bleach header image */
+#bleach-header {
+    background-image: url('../img/Header/bleach-header.jpg');
+    background-position: 50% 100%;
+}
+
+/* gintama header image */
+#yaksha-header {
+    background-image: url('../img/Header/white-yaksha-header.png');
+    background-position: 35% 100%;
+}
+
+/* demon slayer header */
+#kny-header {
+    background-image: url('../img/Header/demonslayer-header.jpg');
+    background-position: 40% 100%;
+}
+
+/* animation nav list slide in */
+@keyframes slidein {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* animation hover on nav list item */
+@keyframes colornav {
+    0% {
+        background-color: rgb(3, 243, 131, 0);
+    }
+
+    100% {
+        background-color: rgb(3, 243, 131);
+    }
+}
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+
+    /* navigation list */
+    nav ul {
+        position: absolute;
+        top: 50px;
+        height: 100vh;
+        width: 100%;
+        display: none;
+        background-color: rgb(3, 243, 131);
+        text-align: center;
+        z-index: 10;
+    }
+
+    /* navigation list item */
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+        line-height: 50px;
+    }
+
+    nav ul li a {
+        font-size: 28px;
+    }
+
+    /* hamburger menu */
+    #open-menu {
+        display: block;
+    }
+
+    /*slide in navigation list */
+    #menu:checked~ul {
+        display: block;
+        animation-name: slidein;
+        animation-duration: 1.5s;
+    }
+
+    /* geen hamburger menu display */
+    #menu:checked~#open-menu {
+        display: none;
+    }
+
+    /* kruisje display */
+    #menu:checked~#close-menu {
+        display: block;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    /*footer column */
+    .footercolumn {
+        width: 100%;
+        margin: 15px;
+    }
+
+    .footercolumn p,
+    .footercolumn h3 {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .footercolumn p {
+        font-size: 16px;
+        margin-top: -5px;
+    }
+
+    .footercolumn h3 {
+        margin-top: 25px;
+    }
+
+    .socialmedia-icons {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+    /* navigation list item */
+    nav ul li {
+        padding: 0 5px;
+    }
+
+    footer {
+        height: 225px;
+    }
+
+    /* footer column */
+    .footercolumn {
+        margin: 0 50px;
+    }
+
+    .footercolumn p {
+        font-size: 14px;
+    }
+
+    .footercolumn h3 {
+        font-size: 20px;
+    }
+}
