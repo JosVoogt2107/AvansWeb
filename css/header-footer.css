@@ -4,6 +4,7 @@
     padding: 0;
     border: 0;
     font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*navigation */
@@ -133,7 +134,7 @@ footer {
 .header-image {
     background-size: cover;
     height: 70vh;
-    border-bottom: 2px solid rgb(48, 46, 46);
+    border-bottom: 1px solid rgb(48, 46, 46);
 }
 
 /* Date a Live header image */
@@ -220,19 +221,19 @@ footer {
     }
 
     /*slide in navigation list */
-    #menu:checked~ul {
+    #menu:checked ~ ul {
         display: block;
         animation-name: slidein;
         animation-duration: 1.5s;
     }
 
     /* geen hamburger menu display */
-    #menu:checked~#open-menu {
+    #menu:checked ~ #open-menu {
         display: none;
     }
 
     /* kruisje display */
-    #menu:checked~#close-menu {
+    #menu:checked ~ #close-menu {
         display: block;
     }
 
