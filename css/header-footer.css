@@ -27,6 +27,22 @@ nav ul li {
     display: inline-block;
     line-height: 50px;
     padding: 0 15px;
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(27, 26, 26);
+    border-radius: 0 0 5px 5px;
+}
+
+nav ul li ul li {
+    width: 135px;
+}
+
+nav ul li:hover ul {
+    display: block;
 }
 
 /* hover on navigation list item */
@@ -129,6 +145,10 @@ footer {
     transition: 0.5s;
     transform: rotateY(180deg);
 }
+.fa-caret-down {
+    margin-left: 10px;
+    color: white;
+}
 
 /*header-image*/
 .header-image {
@@ -193,7 +213,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     /* navigation list */
-    nav ul {
+    nav ul, nav ul li ul {
         position: absolute;
         top: 50px;
         height: 100vh;
@@ -205,14 +225,26 @@ footer {
     }
 
     /* navigation list item */
-    nav ul li {
+    nav ul li{
         display: block;
         margin: 25px 0;
         line-height: 50px;
     }
 
+    nav ul li ul {
+        display: contents;
+    }
+
+    nav ul li ul li {
+        width: auto;
+    }
+
     nav ul li a {
         font-size: 28px;
+    }
+
+    .fa-caret-down {
+        display: none;
     }
 
     /* hamburger menu */
