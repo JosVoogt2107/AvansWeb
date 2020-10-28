@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheet links -->
-    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/header-footer.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Homepage</title>
 </head>
 
@@ -16,7 +16,7 @@
     <!-- header -->
     <header>
         <nav>
-            <input type="checkbox" id="menu" />
+            <input type="checkbox" id="menu">
             <label for="menu" class="fa fa-bars" id="open-menu"></label>
             <label for="menu" class="fa fa-times" id="close-menu"></label>
             <h1>Anime Channel</h1>
@@ -38,7 +38,8 @@
     </header>
     <!-- main content-->
     <main>
-        <article class="inleiding">
+        <!-- inleinding -->
+        <div class="inleiding">
             <h1>The Anime Channel</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -51,11 +52,12 @@
                 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                 Ut dapibus mollis eros, sed molestie ante efficitur eget.
             </p>
-        </article>
+        </div>
+        <!-- content -->
         <section class="container">
-            <div class="post image">
+            <figure class="post image">
                 <img id="y7w-image" src="img/y7w.jpg">
-            </div>
+            </figure>
             <article class="post">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -87,6 +89,7 @@
                 </p>
             </article>
         </section>
+        <!-- top trending list-->
         <h1>Top Trending</h1>
         <section class="list-row">
             <div class="card">
@@ -115,6 +118,7 @@
             </div>
             </div>
         </section>
+        <!-- content about anime op/ed/ost-->
         <article class="blog">
             <div class="text-column">
                 <h2>Anime OP/ED/OST</h2>
@@ -137,9 +141,9 @@
                     Nunc finibus lorem sed augue hendrerit, sodales scelerisque est efficitur.
                 </p>
             </div>
-            <div class="video">
+            <figure class="video">
                 <iframe src="https://www.youtube.com/embed/oQblPFl1u7Y?controls=0"></iframe>
-            </div>
+            </figure>
         </article>
     </main>
     <!-- footer-->
@@ -164,7 +168,7 @@
             </p>
         </div>
         <div class="footercolumn">
-            <!-- Like ons op Faceboonk instagram ect.-->
+            <!-- Social media links-->
             <h3>Follow us on</h3>
             <div class="socialmedia-icons">
                 <i class="fa fa-facebook"></i>

@@ -1,13 +1,22 @@
+/* all h1 in main tag */
 main h1 {
     text-align: center;
     margin-top: 25px;
     font-size: 40px;
 }
-p {
+
+/* all p en labels */
+p,
+label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
-h4,h3, h2, h1 {
+
+/* all h */
+h4,
+h3,
+h2,
+h1 {
     font-family: 'Odibee Sans', cursive;
     letter-spacing: 3px;
 }
@@ -17,22 +26,26 @@ h2 {
 h4 {
     font-size: 32px;
 }
-label {
-    font-size: 16px;
-}
+
 section {
     display: flex;
     flex-direction: row;
 }
+
+/* all h2 in section */
 section h2 {
     text-align: center;
     margin: 20px 0;
 }
+
+/* default img properties */
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+/* webform*/
 form {
     display: flex;
     padding: 15px;
@@ -45,26 +58,31 @@ form {
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgb(48, 46, 46, 0.5);
 }
-/*on web form */
+
+/* input fields on web form */
 input {
     margin-bottom: 15px;
-    width: 90%; /* lengte van de input tag zelf */
+    width: 90%;
+    /* lengte van de input tag zelf */
     height: 25px;
     border-radius: 5px;
     border: 1px solid black;
     background-color: whitesmoke;
-    color:  rgb(48, 46, 46);
+    color: rgb(48, 46, 46);
 }
-/*on web form*/
+
+/* radiobuttons on webform */
 input[type=radio] {
     width: 17px;
     height: 17px;
     opacity: 0;
     position: absolute;
 }
-input[type=radio]:checked ~ .radio_indicator {
+/* radiobuttons when checked */
+input[type=radio]:checked~.radio_indicator {
     background-color: rgb(3, 243, 131);
 }
+/* checkboxes on webform */
 input[type=checkbox] {
     height: 20px;
     width: 30px;
@@ -72,27 +90,30 @@ input[type=checkbox] {
     position: absolute;
     opacity: 0;
 }
+/* checkboxes when checked */
 input[type=checkbox]:checked ~ .checkmark-indicator {
     background-color: rgb(3, 243, 131);
     border: 1px solid rgb(3, 243, 131);
 }
-/* on web form */
+
+/* select on webform */
 select {
     margin-left: -5px;
     width: 45%;
     height: 40px;
     color: white;
-    background-color:  rgb(3, 243, 131);
+    background-color: rgb(3, 243, 131);
     border-radius: 5px;
-    border: 1px solid  rgb(3, 243, 131);
+    border: 1px solid rgb(3, 243, 131);
     font-weight: bold;
     font-size: 16px;
 }
-/* on web form */
+
 option {
     background-color: rgb(48, 46, 46);
 }
-/* on web form */
+
+/* textarea for message on webform */
 textarea {
     width: 93%;
     height: 150px;
@@ -100,75 +121,96 @@ textarea {
     border-radius: 5px;
     border: 1px solid black;
     background-color: whitesmoke;
-    color:  rgb(48, 46, 46);
+    color: rgb(48, 46, 46);
     font-size: 14px;
 }
-/* knop van het formulier */
+
+/* focus on textarea and input */
+textarea:focus, input:focus {
+    box-shadow: 10px 10px 20px rgb(48, 46, 46, 0.5);
+    animation-name: glowinginput;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* button on webform */
 button {
     margin-top: 20px;
     border-radius: 5px;
-    border: 1px solid  rgb(3, 243, 131);
-    background-color:  rgb(3, 243, 131);
+    border: 1px solid rgb(3, 243, 131);
+    background-color: rgb(3, 243, 131);
     color: white;
     height: 50px;
     width: 125px;
     font-weight: bold;
     font-size: 16px;
 }
+
 button:hover {
     background-color: rgb(27, 26, 26);
     border: 1px solid rgb(27, 26, 26);
     transition: 0.5s;
 }
-/* google maps */
+
+/* default iframe properties */
 iframe {
     width: 100%;
     height: 300px;
     border: none;
 }
-/*inleinding op Home en Big 3 page */
+
+/*inleiding */
 .inleiding {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .inleiding p {
     width: 50%;
     margin-top: 25px;
     text-align: center;
 }
-/* Article on Big three page */
+
+/* blog item */
 .blog {
     margin: 50px 30px;
     display: flex;
     flex-direction: row;
 }
-.blog h2 {
-    padding: 15px;
-}
+
+.blog h2,
 .blog p {
     padding: 15px;
 }
+
+/* text-colum width */
 .text-column {
     width: 50%;
 }
+
 /*image in de  article row */
 .image-container {
     margin-top: 75px;
     margin-left: 30px;
     width: 50%;
 }
-/* over ons */
-.post, .post.image {
+
+/* post items */
+.post,
+.post.image {
     margin-top: 50px;
     width: 33.33333%;
     border: none;
     padding: 15px;
 }
+
 .post h2 {
     text-align: left;
     margin-bottom: 20px;
 }
+
+
 .container {
     display: flex;
     margin: 25px;
@@ -176,41 +218,54 @@ iframe {
     justify-content: space-around;
 
 }
+
 .container > div {
     padding: 15px;
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
+
+/* video properties */
 .video {
     width: 50%;
     border: 1px solid black;
 }
+
 .video > iframe {
     height: 100%;
 }
-/* personen in over ons */
-.avatar-container {
-    display: flex;
-    justify-content: center;
-}
+
 /* three images on the big three pages */
 #naruto-image {
     object-position: 48% 100%;
 }
-#bleach-image, #onepunchman-image {
+
+#bleach-image,
+#onepunchman-image {
     object-position: 30% 100%;
 }
+
+/* persons in over ons */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+}
+
 /*avatar img */
 .avatar {
     border-radius: 50%;
     width: 40%;
 }
+
+/* list row for cards */
 .list-row {
     margin: 25px 0;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
+
+/* cards */
 .card {
     margin: 25px 0;
     width: 20%;
@@ -218,57 +273,73 @@ iframe {
     box-shadow: 10px 10px 20px rgba(48, 46, 46, 0.5);
     border-radius: 5px;
 }
+
 .card:hover {
     transition: 1s;
     transform: scale(1.1);
     box-shadow: 10px 10px 20px rgba(48, 46, 46);
 
 }
+
 .card > div {
     padding: 10px;
     text-align: center;
 }
+
 .card > img {
     border-radius: 5px 5px 0 0;
     height: 80%;
     object-fit: fill;
 }
+
 /* contact page container */
 .contact-container {
     display: flex;
     flex-direction: row;
 }
+
 .contact-container h2 {
     margin-bottom: 30px;
 }
-/* contact tekst blok */
+
+/* contact text blok */
 .contact-text {
     width: 50%;
     padding: 20px;
-    margin:  0px 20px 0 50px;
+    margin: 0 20px 0 50px;
 }
+
 .contact-text p {
     margin-top: 55px;
 }
+
 /* contact formulier */
 .contact-form {
     width: 50%;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
     padding: 20px;
-    color: rgb(27, 26, 26);
-    
 }
+
+.contact-form h2 {
+    text-align: center;
+    color: rgb(27, 26, 26);
+}
+
+/* webform row */
 .form-row {
     margin: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-/*input velden van contact */
+
+/*input fields on webform */
 .form-input {
     margin-left: -5px;
     width: 100%;
 }
+
+/* custom radiobutton */
 .radio_indicator {
     display: inline-block;
     margin-right: 10px;
@@ -278,6 +349,7 @@ iframe {
     border-radius: 50%;
     border: 1px solid black;
 }
+/*custom checkbox */
 .checkmark-indicator {
     display: inline-block;
     margin-top: 10px;
@@ -288,84 +360,119 @@ iframe {
     background-color: whitesmoke;
     border: 1px solid black;
 }
+/* check icon */
 .fa-check {
     color: whitesmoke
 }
+/* select on webform */
 .form-select {
     width: 100%;
 }
-/* colum titel */
-.contact-form h2 {
-    text-align: center;
+/* animation glowing input for focused input or textarea */
+@keyframes glowinginput {
+    20% {
+        box-shadow: 10px 10px 20px  rgb(36, 14, 90);
+    }
+
+    60% {
+        box-shadow: 10px 10px 20px  rgb(3, 243, 131);
+    }
+
+    100% {
+        box-shadow: 10px 10px 20px rgb(48, 46, 46, 0.5);
+    }
 }
-/* responsive phone contact */
+
+
+/* phone */
 @media screen and (max-width: 480px) {
-    input, select {
+
+    /*input fields on webform */
+    input,
+    select {
         width: 100%;
     }
+
     input[type="checkbox"] {
         margin-right: 10px;
         margin-left: 0;
     }
+
     textarea {
         width: 96%;
         height: 300px;
     }
+
     button {
         width: 96%;
         font-size: 20px;
     }
+
+    /*h3 and h4 */
     h3 {
         font-size: 28px;
         text-align: center;
     }
+
     h4 {
         font-size: 20px;
     }
+
+     /* contact container */
     .contact-container {
         display: flex;
         flex-direction: column;
     }
-    /* contact tekst blok */
+
+    /* contact text blok */
     .contact-text {
         width: 90%;
         margin: 0;
         padding: 15px;
     }
+
     .contact-text h2 {
         margin-bottom: -20px;
     }
+
     /*contact form */
     .contact-form {
         margin: 0 0 20px 0;
         width: 90%;
         padding: 15px;
     }
+
     .contact-form h2 {
         text-align: left;
     }
-    .form-row{
+
+    /* webform row */
+    .form-row {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
+    /* webform inputs */
     .form-input {
         width: 100%;
     }
+    /*webform select */
     .form-select {
         width: 100%;
         margin-bottom: 10px;
     }
+    /* inleiding */
     .inleiding {
-        text-align: center;
         margin-bottom: 35px;
         padding: 20px;
     }
+
     .inleiding p {
         width: 100%;
         padding: 15px;
         text-align: center;
     }
+    /* blog */
     .blog {
         display: flex;
         flex-direction: column;
@@ -373,93 +480,122 @@ iframe {
         margin: 0;
         padding: 0;
     }
+
     .blog p {
         margin: 20px;
         margin-top: -10px;
     }
+
     .blog h2 {
         margin-left: 20px;
     }
-    .blog .text-column{
+
+    .blog .text-column {
         width: 100%;
     }
+    /* image containers */
     .image-container {
         width: 100%;
         margin: 0;
         padding: 0;
         height: 70vh;
     }
+
     .container {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
+
     .container > div {
         border: none;
         text-align: center;
     }
+    /* posts */
     .post {
         margin: 20px;
         width: 80%;
     }
+
     .post h2 {
         text-align: left;
     }
+
     .post.image {
         margin: 0 0 -5px 0;
         padding: 0;
         width: 100%;
     }
+    /* cards in anime list */
     .card {
         width: 40%;
         font-size: 20px;
     }
-    .card > img {
+
+    .card>img {
         height: 75%;
     }
+    /* video */
     .video {
         width: 100%;
         height: 250px;
+        border: none;
     }
 }
+ /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*textarea input and select on webform */
     textarea {
         height: 200px;
         width: 97%;
     }
-    select, input {
+
+    select,
+    input {
         width: 100%;
     }
+
     button {
         width: 100%;
     }
+
     h4 {
         font-size: 26px;
     }
+
+    /* contact form */
     .contact-form {
         width: 60%;
     }
-    .form-row{
+    /* webform row */
+    .form-row {
         display: flex;
         flex-direction: column;
     }
+    /* input on webform */
     .form-input {
         width: 100%;
     }
+    /* contactpage information */
     .contact-text {
         width: 40%;
     }
+
     .contact-text p {
         margin-top: -5px;
     }
-    .card > img {
+    /* card in anime list */
+    .card >img {
         height: 75%;
     }
+
+    /* second child in container */
     .container:nth-child(2) {
         flex-wrap: wrap;
         justify-content: left;
         margin-top: -20px;
     }
+    /* post */
     .post {
         width: 45%;
     }
@@ -486,3 +622,4 @@ iframe {
     }
 
 }
+

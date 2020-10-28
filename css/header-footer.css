@@ -2,8 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
+    border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -13,6 +12,16 @@ nav {
     background-color: rgb(27, 26, 26);
     position: fixed;
     width: 100%;
+}
+
+/* titel in navigation */
+nav h1 {
+    position: absolute;
+    top: 7px;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
 }
 
 /*navigation list */
@@ -31,17 +40,22 @@ nav ul li {
     position: relative;
 }
 
+/*dropdown*/
 nav ul li ul {
     display: none;
     position: absolute;
+    left: 0;
     background-color: rgb(27, 26, 26);
     border-radius: 0 0 5px 5px;
 }
 
 nav ul li ul li {
-    width: 135px;
+    width: 151px;
+    background-color: rgb(3, 243, 131);
+    border-radius: 0 0 5px 5px;
 }
 
+/*hover on dropdown */
 nav ul li:hover ul {
     display: block;
 }
@@ -53,6 +67,7 @@ nav ul li:hover {
     animation-delay: 0.2s
 }
 
+/* tekst of the list item */
 nav ul li a {
     color: white;
     font-size: 25px;
@@ -63,7 +78,7 @@ nav ul li a {
 
 /* active page */
 .active-page {
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: rgb(3, 243, 131);
 }
 
@@ -81,22 +96,13 @@ nav ul li a {
     display: none;
 }
 
-/* titel in navigation */
-nav h1 {
-    position: absolute;
-    top: 7px;
-    left: 5%;
-    color: white;
-    font-weight: bold;
-    font-size: 36px;
-}
-
+/* footer */
 footer {
     position: relative;
     bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(27, 26, 26);
     height: 215px;
@@ -126,14 +132,14 @@ footer {
 .fa-facebook:hover {
     color: #3b5998;
     transition: 0.5s;
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 
 /* twitter icon */
 .fa-twitter:hover {
     color: #1da1f2;
     transition: 0.5s;
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 
 /* instagram icon */
@@ -143,8 +149,10 @@ footer {
     background-clip: text;
     color: transparent;
     transition: 0.5s;
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
+
+/*dropdown icon */
 .fa-caret-down {
     margin-left: 10px;
     color: white;
@@ -154,7 +162,7 @@ footer {
 .header-image {
     background-size: cover;
     height: 70vh;
-    border-bottom: 1px solid rgb(48, 46, 46);
+    border-bottom: 2px solid rgb(48, 46, 46);
 }
 
 /* Date a Live header image */
@@ -213,7 +221,8 @@ footer {
 @media screen and (max-width: 768px) {
 
     /* navigation list */
-    nav ul, nav ul li ul {
+    nav ul,
+    nav ul li ul {
         position: absolute;
         top: 50px;
         height: 100vh;
@@ -225,7 +234,7 @@ footer {
     }
 
     /* navigation list item */
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px 0;
         line-height: 50px;
@@ -239,6 +248,7 @@ footer {
         width: auto;
     }
 
+    /* tekst of the list item */
     nav ul li a {
         font-size: 28px;
     }
@@ -255,29 +265,29 @@ footer {
     }
 
     /*slide in navigation list */
-    #menu:checked ~ ul {
+    #menu:checked~ul {
         display: block;
         animation-name: slidein;
         animation-duration: 1.5s;
     }
 
     /* geen hamburger menu display */
-    #menu:checked ~ #open-menu {
+    #menu:checked~#open-menu {
         display: none;
     }
 
     /* kruisje display */
-    #menu:checked ~ #close-menu {
+    #menu:checked~#close-menu {
         display: flex;
         justify-content: flex-end;
     }
 
+    /* footer */
     footer {
-        bottom: 0;
+        position: static;
         height: 500px;
         display: flex;
         flex-direction: column;
-        align-items: left;
     }
 
     /*footer column */
@@ -293,7 +303,6 @@ footer {
     }
 
     .footercolumn p {
-        font-size: 16px;
         margin-top: -5px;
     }
 
@@ -301,6 +310,7 @@ footer {
         margin-top: 25px;
     }
 
+    /* social media-icons */
     .socialmedia-icons {
         text-align: left;
         padding: 0 20px;
@@ -318,6 +328,7 @@ footer {
 
     footer {
         height: 225px;
+        width: 100%;
     }
 
     /* footer column */

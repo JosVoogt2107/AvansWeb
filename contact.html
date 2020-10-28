@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheet links -->
-    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/header-footer.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -16,7 +16,7 @@
     <!-- header -->
     <header>
         <nav>
-            <input type="checkbox" id="menu" />
+            <input type="checkbox" id="menu">
             <label for="menu" class="fa fa-bars" id="open-menu"></label>
             <label for="menu" class="fa fa-times" id="close-menu"></label>
             <h1>Anime Channel</h1>
@@ -38,6 +38,7 @@
     </header>
     <!-- main content-->
     <main>
+        <!-- informatie -->
         <div class="contact-container">
             <div class="contact-text">
                 <h2>Informatie</h2>
@@ -57,17 +58,18 @@
                     In pulvinar pulvinar nibh, quis pharetra velit condimentum quis.
                 </p>
             </div>
+            <!-- contact form -->
             <div class="contact-form">
                 <h2>Bericht versturen</h2>
                 <form>
                     <div class="form-row">
                         <div class="form-input">
-                            <label>Naam:</label><br>
-                            <input type="text" placeholder=" uw naam" />
+                            <label>Naam:</label>
+                            <input type="text" placeholder=" uw naam">
                         </div>
                         <div class="form-input">
-                            <label>Email:</label><br>
-                            <input type="email" placeholder=" uw email" />
+                            <label>Email:</label>
+                            <input type="email" placeholder=" uw email">
                         </div>
                     </div>
                     <div class="form-row">
@@ -95,7 +97,7 @@
                     </div>
                     <div class="form-row-textarea">
                         <div>
-                            <label>Bericht:</label><br>
+                            <label>Bericht:</label>
                             <textarea></textarea>
                         </div>
                     </div>
@@ -112,10 +114,10 @@
                 </form>
             </div>
         </div>
-        <div>
-            <iframe
+        <figure>
+            <iframe id="googlemaps"
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyACij03D1H06CjFEtPMYqasT7xKlPypbZ8&q=heuveltilburg"></iframe>
-        </div>
+        </figure>
     </main>
     <!-- footer-->
     <footer>
@@ -139,7 +141,7 @@
             </p>
         </div>
         <div class="footercolumn">
-            <!-- Like ons op Faceboonk instagram ect.-->
+            <!-- social media links.-->
             <h3>Follow us on</h3>
             <div class="socialmedia-icons">
                 <i class="fa fa-facebook"></i>
